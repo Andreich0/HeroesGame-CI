@@ -49,7 +49,7 @@ namespace HeroesGame.Tests
             int damage = -10;
             // Act & Assert
             // Assert.Throws проверява дали кодът в скобите хвърля конкретна грешка (ArgumentException).
-            
+            // Тест за Travis CI
             Assert.Throws<ArgumentException>(() => _hero.TakeHit(damage));
         }
     }
