@@ -46,13 +46,12 @@ namespace HeroesGame.Tests
         [Test]
         public void ThrowException_WhenTakeHitWithNegativeDamage()
         {
-            // Arrange
             int damage = -10;
-
             // Act & Assert
             // Assert.Throws проверява дали кодът в скобите хвърля конкретна грешка (ArgumentException).
-            // Ако методът НЕ хвърли грешка, тестът ще се оцвети в червено (Fail).
+            
             Assert.Throws<ArgumentException>(() => _hero.TakeHit(damage));
         }
     }
 }
+
